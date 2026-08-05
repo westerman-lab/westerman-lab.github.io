@@ -2,7 +2,7 @@
 layout: archive
 title: "Kenny Westerman"
 permalink: /pi/
-author_profile: true
+author_profile: false
 redirect_from:
   - /teaching/
   - /kenny/
