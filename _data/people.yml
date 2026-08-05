@@ -3,7 +3,8 @@
 # Fields per person:
 #   name    (required)
 #   role    (required)  e.g. "Principal Investigator", "Data Analyst"
-#   image   (optional)  filename in /images/, e.g. "KEW_headshot2.jpeg"
+#   image   (optional)  filename in /images/, e.g. "kew_headshot.jpg"
+#                       filenames are case-sensitive once deployed
 #                       omit to show an initials placeholder instead
 #                       (alumni entries take an optional image too)
 #   blurb   (optional)  1-2 sentences: background and what they work on
@@ -15,20 +16,18 @@
 current:
   - name: "Kenneth (Kenny) Westerman, PhD"
     role: "Principal Investigator"
-    image: "KEW_headshot2.jpeg"
-    blurb: "Assistant Professor at Massachusetts General Hospital and Harvard Medical School. Works on gene-environment interaction methodology and its application to precision cardiometabolic disease prevention."
+    image: "kew_headshot.jpg"
+    blurb: ""
     email: "kewesterman@mgb.org"
     website: "/pi/"
     github: "https://github.com/kwesterman"
     scholar: "https://scholar.google.com/citations?user=bNSlrr0AAAAJ&hl=en"
-    orcid: "https://orcid.org/0000-0001-7619-1868"
+    orcid: 
 
   - name: "Calen Mendall, MS"
     role: "Analyst"
-    # image:
-    blurb: ""   # TODO: 1-2 sentences — background and current projects
-    # email:
-    # github:
+    image: "cale_mendall_headshot.jpg"
+    blurb: ""
 
   - name: "Emily Shen"
     role: "Student"
@@ -37,8 +36,8 @@ current:
 
   - name: "Sijia Zhu"
     role: "Student"
-    # image:
-    blurb: ""   # TODO: program/institution and project focus
+    image: "sijia_zhu_headshot.jpg"
+    blurb: "[Personal site](https://chesleaz.github.io/sijiazhu.github.io/)" 
 
 # Former members — shown at the bottom of the People page, with smaller
 # photos than current members.

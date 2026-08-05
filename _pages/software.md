@@ -23,6 +23,8 @@ We build and maintain open-source tools for gene-environment interaction analysi
 **[ESPRESSO.GxE.RV](https://github.com/kwesterman/ESPRESSO.GxE.RV)** — Simulation-based power estimation for set-based GxE tests.  
 [Documentation and installation](https://github.com/kwesterman/ESPRESSO.GxE.RV) · [Original ESPRESSO manuscript](https://doi.org/10.1093/bioinformatics/btv219)
 
+Note that the genome-wide interaction study-related software programs were developed in close collaboration with Han Chen (NYU) and Alisa Manning (MGH).
+
 ## Genetic clustering
 
 **[bNMF clustering](https://github.com/gwas-partitioning/bnmf-clustering)** — Bayesian non-negative matrix factorization pipeline for partitioning GWAS loci into mechanistically interpretable clusters, including summary statistic preprocessing.

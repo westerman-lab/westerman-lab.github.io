@@ -46,7 +46,9 @@ author_profile: false
     <div class="person-body">
       <div class="person-name">{{ p.name }}</div>
       <div class="person-role">{{ p.role }}</div>
-      {% if p.blurb and p.blurb != "" %}<div class="person-blurb">{{ p.blurb }}</div>{% endif %}
+      {% comment %} markdownify so blurbs can use links and emphasis; it wraps
+         output in <p>, which we strip to keep the card spacing. {% endcomment %}
+      {% if p.blurb and p.blurb != "" %}<div class="person-blurb">{{ p.blurb | markdownify | remove: '<p>' | remove: '</p>' }}</div>{% endif %}
       <div class="person-links">
         {% if p.website %}<a href="{{ p.website }}">Profile</a>{% endif %}
         {% if p.email %}<a href="mailto:{{ p.email }}">Email</a>{% endif %}
@@ -74,7 +76,7 @@ author_profile: false
     {% endif %}
     <div>
       <div class="alum-name">{{ p.name }}</div>
-      <div class="alum-meta">{{ p.role }}{% if p.next %} · now {{ p.next }}{% endif %}</div>
+      <div class="alum-meta">{{ p.role }}{% if p.next %} · now {{ p.next | markdownify | remove: '<p>' | remove: '</p>' }}{% endif %}</div>
     </div>
   </div>
 {% endfor %}

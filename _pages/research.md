@@ -17,8 +17,6 @@ We focus in particular on gene-environment interactions (GxE): cases where the i
 <img src='/images/GxE_diagram.png' width='450'>
 </p>
 
-We are fortunate to collaborate on these problems with other groups in the GxE field, including [Alisa Manning](https://www.manning-lab.info/), [Arun Durvasula](https://keck.usc.edu/faculty-search/arun-durvasula/), [Han Chen](https://sbmi.uth.edu/faculty-and-staff/han-chen.htm), [Joanne Cole](https://scholar.harvard.edu/joannebcole), [Tamar Sofer](https://www.hsph.harvard.edu/profile/tamar-sofer/), [Miriam Udler](https://www.massgeneral.org/doctors/22163/miriam-udler), and the CHARGE Gene-Lifestyle Interactions Working Group.
-
 ---
 
 ## Large-scale genome-wide interaction studies
@@ -27,7 +25,7 @@ GxE identification provides a key foundation for genome-based precision medicine
 
 We led the development and publication of [GEM](https://github.com/large-scale-gxe-methods/GEM), a tool for computationally efficient and statistically rigorous genome-wide GxE testing, which supports robust sandwich-based variance estimation and multi-exposure interaction testing at biobank scale. In the process, we showed that gene-environment interactions may be as common across the genome as genetic main effects.
 
-Working closely with [Joanne Cole](https://scholar.harvard.edu/joannebcole), we put this program to work in an "exposome-wide" interaction study in the UK Biobank, systematically mapping interactions across many genetic variants, exposures, and metabolic biomarkers. Part of this effort involved searching the genome for variance-quantitative trait loci (vQTLs) — genetic variants associated with the *variance* rather than the *mean* of a trait — as a computationally efficient first-pass filter that enriches for true GxE signal before exposome-wide testing. The resulting catalog of vQTL and GxE summary statistics is publicly available through the [Common Metabolic Diseases Knowledge Portal](https://hugeamp.org/).
+Working closely with [Joanne Cole](https://scholar.harvard.edu/joannebcole), we put this program to work in an "exposome-wide" interaction study in the UK Biobank, systematically mapping interactions across many genetic variants, exposures, and metabolic biomarkers. Part of this effort involved searching the genome for variance-quantitative trait loci (vQTLs) — genetic variants associated with the *variance* rather than the *mean* of a trait — as a computationally efficient first-pass filter that enriches for true GxE signal before exposome-wide testing. The resulting catalog of vQTL and GxE summary statistics is publicly available through the [Common Metabolic Diseases Knowledge Portal](https://hugeamp.org/research.html?pageid=UKB-vQTL-GxE).
 
 <p align="center">
 <img src='/images/vqtl_workflow.png' width='450'>
