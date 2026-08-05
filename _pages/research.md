@@ -45,15 +45,19 @@ Applied work in this area has identified gene-diet interactions impacting glycem
 
 Single-variant GxE effects are difficult to find and replicate because the individual effects are so small. Polygenic scores (PGS) offer a way to aggregate genetic information across the genome, but standard PGS are designed to predict *risk* of disease — a continuous trait value or binary trait liability — rather than *response* to an intervention. We develop and apply PGS-based methods that target response heterogeneity directly, with the goal of identifying individuals most likely to benefit from a given preventive strategy.
 
+This line of work began with a gene-diet application in the Women's Health Initiative Dietary Modification Trial, where aggregating thousands of genetic variants into a single "responder score" predicted the LDL-cholesterol response to a low-fat dietary intervention. It was an early demonstration that polygenic aggregation can capture response to a dietary exposure rather than baseline disease risk, and it motivates much of the interaction-focused score development below.
+
 **Interaction PGS (iPGS)** aggregate genome-wide GxE effect estimates into a single score representing genetic predisposition to differential response to an exposure. This is conceptually distinct from a standard PGS, and builds on single-variant GxE discovery.
 
 <p align="center">
 <img src='/images/ipgs_concept.png' width='450'>
 </p>
 
-**Pathway-specific PGS (pPGS)** test the hypothesis that scores constructed from biologically coherent gene sets — lipid metabolism, insulin signaling, and so on — show stronger and more interpretable interactions with relevant exposures than genome-wide PGS. We are also working on the methodological foundations of pPGS construction, including the variant-gene-pathway linkage required for annotation-based approaches and the relative value of annotation-based versus data-driven clustering approaches (such as Bayesian non-negative matrix factorization) for defining the pathway groupings.
+**Pathway-specific PGS (pPGS)** test the hypothesis that scores constructed from biologically coherent gene sets — lipid metabolism, insulin signaling, and so on — show stronger and more interpretable interactions with relevant exposures than genome-wide PGS. We are also working on the methodological foundations of pPGS construction, including the variant-gene-pathway linkage required to annotate variants against existing gene sets.
 
 This work connects to the broader sub-field of genetic clustering, which aims to uncover disease subtypes from genetic signatures of underlying endophenotypes. We have helped generalize and partially automate the [codebase](https://github.com/gwas-partitioning/bnmf-clustering) for the Bayesian non-negative matrix factorization clustering pipeline developed with [Miriam Udler](https://www.massgeneral.org/doctors/22163/miriam-udler), which has since been used in multiple follow-up papers on genetic clustering of type 2 diabetes.
+
+These two ways of grouping variants — annotation-based pathways and data-driven genetic clusters — are rarely considered together, and we are interested in the relationship between them. Annotation-based groupings are biologically interpretable but inherit the gaps and biases of curated gene set databases, while data-driven clusters emerge directly from genetic association structure but require post hoc interpretation. We want to understand where the two converge and where they disagree, whether clusters can be read as empirically derived pathways, and which of the two yields pathway-specific scores that interact more strongly and more interpretably with relevant exposures.
 
 <p align="center">
 <img src='/images/bnmf_t2d_clusters.png' width='450'>
@@ -126,11 +130,3 @@ DNA methylation can integrate biological information from genetic variants and e
 ### Biomedical cloud computing platforms
 
 Genomic science is increasingly migrating to cloud computing platforms, for both scalability and improved data security, but this migration requires substantial infrastructure work. We have developed [workflows](https://dockstore.org/organizations/LSGxE) in Workflow Description Language that conduct GxE tests with a variety of software tools in a way that is portable across cloud platforms, including [Terra](https://terra.bio/), [DNAnexus](https://www.dnanexus.com/), and NHLBI's [BioData Catalyst](https://biodatacatalyst.nhlbi.nih.gov/).
-
-### Food compound bioactivity prediction
-
-A computational approach to predicting food compound bioactivity based on chemical similarity to drugs of known action, implemented as an open-source tool called [PhyteByte](https://github.com/kwesterman/phytebyte). Beyond prioritizing food compounds of interest for specific phenotypes, this work helped translate established cheminformatics approaches from the pharmaceutical realm to the nutritional realm.
-
-<p align="center">
-<img src='/images/phytebyte_diagram.png' width='450'>
-</p>
