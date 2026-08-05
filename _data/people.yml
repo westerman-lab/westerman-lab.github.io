@@ -1,0 +1,47 @@
+# Lab members, rendered by _pages/people.md
+#
+# Fields per person:
+#   name    (required)
+#   role    (required)  e.g. "Principal Investigator", "Data Analyst"
+#   image   (optional)  filename in /images/, e.g. "KEW_headshot2.jpeg"
+#                       omit to show an initials placeholder instead
+#   blurb   (optional)  1-2 sentences: background and what they work on
+#   email   (optional)
+#   github / scholar / orcid / linkedin / website  (optional)  full URLs
+#
+# Order in this file is the order shown on the page.
+
+current:
+  - name: "Kenneth (Kenny) Westerman, PhD"
+    role: "Principal Investigator"
+    image: "KEW_headshot2.jpeg"
+    blurb: "Assistant Professor at Massachusetts General Hospital and Harvard Medical School. Works on gene-environment interaction methodology and its application to precision cardiometabolic disease prevention."
+    email: "kewesterman@mgb.org"
+    website: "/pi/"
+    github: "https://github.com/kwesterman"
+    scholar: "https://scholar.google.com/citations?user=bNSlrr0AAAAJ&hl=en"
+    orcid: "https://orcid.org/0000-0001-7619-1868"
+
+  - name: "Calen Mendall, MS"
+    role: "Data Analyst"
+    # image:
+    blurb: ""   # TODO: 1-2 sentences — background and current projects
+    # email:
+    # github:
+
+  - name: "Emily Shen"
+    role: "Student"
+    # image:
+    blurb: ""   # TODO: program/institution and project focus
+
+  - name: "Sijia Zhu"
+    role: "Student"
+    # image:
+    blurb: ""   # TODO: program/institution and project focus
+
+# Former members — shown as a simple list at the bottom of the People page.
+# Format: name, role, and (optionally) where they went next.
+alumni: []
+  # - name: ""
+  #   role: ""
+  #   next: ""

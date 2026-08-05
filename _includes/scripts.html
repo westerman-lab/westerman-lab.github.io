@@ -1,0 +1,36 @@
+<script src="{{ base_path }}/assets/js/main.min.js"></script>
+
+<script>
+  /* The theme's greedy navigation moves at most one link between the visible bar
+     and the overflow menu per resize event, so widening the window leaves links
+     stranded in the hamburger. It also measures on script execution, which can
+     precede final layout and webfont loading. Recompute from a clean slate on
+     load, on font load, and after resizing settles. */
+  (function () {
+    function resetGreedyNav() {
+      if (typeof updateNav !== 'function' || typeof breaks === 'undefined') return;
+      var $visible = $('#site-nav .visible-links');
+      var $hidden = $('#site-nav .hidden-links');
+      while ($hidden.children().length) {
+        $hidden.children().first().appendTo($visible);
+      }
+      breaks.length = 0;
+      $('#site-nav button').addClass('hidden');
+      $hidden.addClass('hidden');
+      updateNav();
+    }
+
+    var resizeTimer;
+    $(window).on('resize', function () {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(resetGreedyNav, 150);
+    });
+    $(window).on('load', resetGreedyNav);
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(resetGreedyNav);
+    }
+  })();
+</script>
+
+{% include analytics.html %}
+{% include /comments-providers/scripts.html %}

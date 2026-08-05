@@ -1,0 +1,2 @@
+# Per-page author overrides for the AcademicPages `author_profile` sidebar.
+# Pages fall back to the `author:` block in _config.yml when this is empty.
