@@ -21,6 +21,16 @@ author_profile: false
 .person-links { font-size: 0.82em; }
 .person-links a { margin-right: 0.7em; }
 @media (max-width: 600px) { .person { flex: 1 1 100%; min-width: 0; } }
+
+.alumni-list { display: flex; flex-wrap: wrap; gap: 1em 1.75em; margin: 1.25em 0 2em; }
+.alum { display: flex; gap: 0.75em; flex: 1 1 20em; min-width: 18em; align-items: center; }
+.alum-photo { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+.alum-initials { width: 52px; height: 52px; border-radius: 50%; flex-shrink: 0;
+  background: #e8eaed; color: #6b7480; display: flex; align-items: center; justify-content: center;
+  font-size: 0.95em; font-weight: 600; letter-spacing: 0.03em; }
+.alum-name { font-weight: 700; line-height: 1.3; }
+.alum-meta { color: #6b7480; font-size: 0.88em; line-height: 1.35; }
+@media (max-width: 600px) { .alum { flex: 1 1 100%; min-width: 0; } }
 </style>
 
 <div class="people-grid">
@@ -29,8 +39,9 @@ author_profile: false
     {% if p.image %}
       <img class="person-photo" src="{{ p.image | prepend: '/images/' | prepend: base_path }}" alt="{{ p.name }}">
     {% else %}
-      {% assign parts = p.name | split: ' ' %}
-      <div class="person-initials">{{ parts[0] | slice: 0 }}{{ parts | last | slice: 0 }}</div>
+      {% comment %} Drop any credential suffix ("…, PhD") before taking initials. {% endcomment %}
+      {% assign parts = p.name | split: ',' | first | split: ' ' %}
+      <div class="person-initials">{{ parts | first | slice: 0 }}{{ parts | last | slice: 0 }}</div>
     {% endif %}
     <div class="person-body">
       <div class="person-name">{{ p.name }}</div>
@@ -52,17 +63,26 @@ author_profile: false
 {% if site.data.people.alumni and site.data.people.alumni.size > 0 %}
 ## Alumni
 
+<div class="alumni-list">
 {% for p in site.data.people.alumni %}
-* **{{ p.name }}** — {{ p.role }}{% if p.next %}; now {{ p.next }}{% endif %}
+  <div class="alum">
+    {% if p.image %}
+      <img class="alum-photo" src="{{ p.image | prepend: '/images/' | prepend: base_path }}" alt="{{ p.name }}">
+    {% else %}
+      {% assign parts = p.name | split: ',' | first | split: ' ' %}
+      <div class="alum-initials">{{ parts | first | slice: 0 }}{{ parts | last | slice: 0 }}</div>
+    {% endif %}
+    <div>
+      <div class="alum-name">{{ p.name }}</div>
+      <div class="alum-meta">{{ p.role }}{% if p.next %} · now {{ p.next }}{% endif %}</div>
+    </div>
+  </div>
 {% endfor %}
+</div>
 {% endif %}
 
 ---
 
 ## Collaborators
 
-The lab works closely with a number of groups at MGH, the Broad Institute, and beyond, including [Alisa Manning](https://www.manning-lab.info/), [Arun Durvasula](https://keck.usc.edu/faculty-search/arun-durvasula/), [Han Chen](https://sbmi.uth.edu/faculty-and-staff/han-chen.htm), [Joanne Cole](https://scholar.harvard.edu/joannebcole), [Tamar Sofer](https://www.hsph.harvard.edu/profile/tamar-sofer/), and [Miriam Udler](https://www.massgeneral.org/doctors/22163/miriam-udler), as well as the CHARGE Gene-Lifestyle Interactions Working Group and the TOPMed Environmental and Social Determinants of Health Working Group.
-
-## Joining
-
-We are currently recruiting a postdoctoral fellow and a computational associate. See [Join Us](/join/) for details.
+The lab works closely with a number of groups at MGH, the Broad Institute, and beyond, including [Alisa Manning](https://www.manning-lab.info/), [Arun Durvasula](https://durvasula-lab.usc.edu/), [Dan Chasman](https://prevmed.bwh.harvard.edu/daniel-i-chasman-phd/), [Miriam Udler](https://www.udlerlab.org/), and many members of the CHARGE Gene-Lifestyle Interactions Working Group and the TOPMed Environmental and Social Determinants of Health Working Group.

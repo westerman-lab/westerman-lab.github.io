@@ -20,8 +20,6 @@ The lab is based in the [Clinical and Translational Epidemiology Unit](https://w
 
 We are fortunate to be supported by the National Institutes of Health / NIDDK (awards R01DK147322, R03DK145936, K01DK133637) and the American Heart Association (award 26IPA1629206).
 
-**We are currently hiring** a postdoctoral fellow and a computational associate — see [Join Us](/join/).
-
 <br>
 
 <small>

@@ -82,15 +82,15 @@ analytics:
 author:
   name             : "Kenneth Westerman, PhD"
   avatar           : "KEW_headshot2.jpeg"
-  bio              : "Scientist at Massachusetts General Hospital, Harvard Medical School, and the Broad Institute of MIT and Harvard. 'Kenneth' only when taking myself too seriously."
-  location         : "Boston, MA"
-  email            : "kewesterman@mgb.org"
-  github           : "kwesterman"
-  twitter          : "kewesterman"
-  linkedin         : "kennethwesterman"
-  orcid            : "http://orcid.org/0000-0001-7619-1868"
-  pubmed           : #"https://pubmed.ncbi.nlm.nih.gov/?term=kenneth+westerman&sort=date"
-  googlescholar    : #"https://scholar.google.com/citations?user=bNSlrr0AAAAJ&hl=en"
+  bio              : 
+  location         : 
+  email            :
+  github           : 
+  twitter          : 
+  linkedin         : 
+  orcid            : 
+  pubmed           : 
+  googlescholar    : 
   employer         :
   researchgate     : 
   uri              :
