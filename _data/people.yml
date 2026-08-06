@@ -39,6 +39,11 @@ current:
     image: "sijia_zhu_headshot.jpg"
     blurb: "[Personal site](https://chesleaz.github.io/sijiazhu.github.io/)" 
 
+  - name: "Armaan Chaudhry"
+    role: "Student"
+    image: "armaan_chaudhry_headshot.jpeg"
+    blurb: "[Personal site](https://www.linkedin.com/in/armaan-chaudhry/)" 
+
 # Former members — shown at the bottom of the People page, with smaller
 # photos than current members.
 # Fields: name, role, and optionally image and next (where they went after
