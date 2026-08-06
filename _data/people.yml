@@ -31,7 +31,7 @@ current:
 
   - name: "Emily Shen"
     role: "Student"
-    # image:
+    image: "emily_shen_headshot.jpeg"
     blurb: ""   # TODO: program/institution and project focus
 
   - name: "Sijia Zhu"
@@ -42,7 +42,7 @@ current:
   - name: "Armaan Chaudhry"
     role: "Student"
     image: "armaan_chaudhry_headshot.jpeg"
-    blurb: "[Personal site](https://www.linkedin.com/in/armaan-chaudhry/)" 
+    blurb: "[LinkedIn](https://www.linkedin.com/in/armaan-chaudhry/)" 
 
 # Former members — shown at the bottom of the People page, with smaller
 # photos than current members.
