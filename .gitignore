@@ -3,5 +3,8 @@ _site/
 .jekyll-metadata
 .sass-cache/
 .bundle/
-vendor/
+# Anchored to the repo root: this is the bundler install path. Do NOT write
+# this as "vendor/", which would also match _sass/vendor and assets/js/vendor,
+# both of which the theme needs at build time.
+/vendor/
 .DS_Store

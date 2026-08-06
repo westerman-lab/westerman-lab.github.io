@@ -25,10 +25,3 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap'
   gem 'hawkins'
 end
-
-# Stdlib gems unbundled in Ruby 3.4+/4.0, needed by Jekyll 3.x for local builds.
-# GitHub Pages builds server-side with its own dependency set and ignores these.
-gem "csv"
-gem "base64"
-gem "bigdecimal"
-gem "logger"
