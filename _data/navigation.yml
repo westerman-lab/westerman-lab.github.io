@@ -15,5 +15,5 @@ main:
   - title: "Join Us"
     url: /join/
 
-  - title: "Kenny Westerman"
-    url: /pi/
+# The PI page (/pi/) is deliberately not in the nav. It is reached from the
+# Principal Investigator card on the People page.

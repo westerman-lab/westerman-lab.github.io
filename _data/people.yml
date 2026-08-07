@@ -1,29 +1,42 @@
 # Lab members, rendered by _pages/people.md
 #
+# Three groups, each rendered under its own heading:
+#   pi       principal investigator
+#   members  current lab members
+#   alumni   former members, shown smaller at the bottom of the page
+#
 # Fields per person:
 #   name    (required)
-#   role    (required)  e.g. "Principal Investigator", "Data Analyst"
+#   role    (required)  e.g. "Principal Investigator", "Analyst", "Student"
 #   image   (optional)  filename in /images/, e.g. "kew_headshot.jpg"
 #                       filenames are case-sensitive once deployed
 #                       omit to show an initials placeholder instead
-#                       (alumni entries take an optional image too)
-#   blurb   (optional)  1-2 sentences: background and what they work on
+#   blurb   (optional)  1-2 sentences, or a link; markdown is rendered
 #   email   (optional)
 #   github / scholar / orcid / linkedin / website  (optional)  full URLs
 #
-# Order in this file is the order shown on the page.
+# `website` renders as the first link under a person's name. On the PI entry
+# it points at /pi/ and is labelled "Bio & CV"; elsewhere it reads "Website".
+#
+# Alumni entries read only name, role, image, and next (where they went after
+# the lab); blurbs and links are ignored there.
+#
+# Order within each group is the order shown on the page.
 
-current:
+pi:
   - name: "Kenneth (Kenny) Westerman, PhD"
-    role: "Principal Investigator"
+    # The section heading already says "Principal Investigator", so this line
+    # carries the appointment instead of repeating it.
+    role: "Assistant Professor, MGH and Harvard Medical School"
     image: "kew_headshot.jpg"
     blurb: ""
     email: "kewesterman@mgb.org"
     website: "/pi/"
     github: "https://github.com/kwesterman"
     scholar: "https://scholar.google.com/citations?user=bNSlrr0AAAAJ&hl=en"
-    orcid: 
+    orcid:
 
+members:
   - name: "Calen Mendall, MS"
     role: "Analyst"
     image: "cale_mendall_headshot.jpg"
@@ -37,17 +50,13 @@ current:
   - name: "Sijia Zhu"
     role: "Student"
     image: "sijia_zhu_headshot.jpg"
-    blurb: "[Personal site](https://chesleaz.github.io/sijiazhu.github.io/)" 
+    blurb: "[Personal site](https://chesleaz.github.io/sijiazhu.github.io/)"
 
   - name: "Armaan Chaudhry"
     role: "Student"
     image: "armaan_chaudhry_headshot.jpeg"
-    blurb: "[LinkedIn](https://www.linkedin.com/in/armaan-chaudhry/)" 
+    blurb: "[LinkedIn](https://www.linkedin.com/in/armaan-chaudhry/)"
 
-# Former members — shown at the bottom of the People page, with smaller
-# photos than current members.
-# Fields: name, role, and optionally image and next (where they went after
-# the lab). Only these four are read; blurbs and links are ignored here.
 alumni:
   - name: "Paul Hanson, BS"
     role: "Data Analyst"

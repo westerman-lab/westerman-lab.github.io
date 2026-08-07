@@ -1,0 +1,32 @@
+{% comment %}
+Renders one person card for the People page.
+
+  person         a hash from _data/people.yml
+  website_label  optional label for the person.website link (default "Website")
+
+Blurbs go through markdownify so they can carry links; markdownify wraps its
+output in <p>, which is stripped to keep the card spacing tight.
+{% endcomment %}
+{% assign p = include.person %}
+<div class="person">
+  {% if p.image %}
+    <img class="person-photo" src="{{ p.image | prepend: '/images/' | prepend: base_path }}" alt="{{ p.name }}">
+  {% else %}
+    {% comment %} Drop any credential suffix ("…, PhD") before taking initials. {% endcomment %}
+    {% assign parts = p.name | split: ',' | first | split: ' ' %}
+    <div class="person-initials">{{ parts | first | slice: 0 }}{{ parts | last | slice: 0 }}</div>
+  {% endif %}
+  <div class="person-body">
+    <div class="person-name">{{ p.name }}</div>
+    <div class="person-role">{{ p.role }}</div>
+    {% if p.blurb and p.blurb != "" %}<div class="person-blurb">{{ p.blurb | markdownify | remove: '<p>' | remove: '</p>' }}</div>{% endif %}
+    <div class="person-links">
+      {% if p.website %}<a href="{{ p.website }}">{{ include.website_label | default: "Website" }}</a>{% endif %}
+      {% if p.email %}<a href="mailto:{{ p.email }}">Email</a>{% endif %}
+      {% if p.scholar %}<a href="{{ p.scholar }}">Scholar</a>{% endif %}
+      {% if p.github %}<a href="{{ p.github }}">GitHub</a>{% endif %}
+      {% if p.orcid %}<a href="{{ p.orcid }}">ORCID</a>{% endif %}
+      {% if p.linkedin %}<a href="{{ p.linkedin }}">LinkedIn</a>{% endif %}
+    </div>
+  </div>
+</div>
