@@ -16,7 +16,7 @@ The Westerman Lab sits at the intersection of genetic epidemiology and precision
 <img src='/images/GxE_diagram.png' width='450'>
 </p>
 
-The lab is based in the [Clinical and Translational Epidemiology Unit](https://www.massgeneral.org/medicine/cteu) at Massachusetts General Hospital, with an additional presence at the [Broad Institute](https://www.broadinstitute.org/) (Broad Diabetes Initiative and Diabetes Genetics Research Group).
+Our group is based in the [Clinical and Translational Epidemiology Unit](https://www.massgeneral.org/medicine/cteu) at Massachusetts General Hospital, with an additional presence at the [Broad Institute](https://www.broadinstitute.org/) (Broad Diabetes Initiative and Diabetes Genetics Research Group).
 
 We are fortunate to be supported by the National Institutes of Health / NIDDK (awards R01DK147322, R03DK145936, K01DK133637) and the American Heart Association (award 26IPA1629206).
 

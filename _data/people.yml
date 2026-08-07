@@ -32,7 +32,7 @@ current:
   - name: "Emily Shen"
     role: "Student"
     image: "emily_shen_headshot.jpeg"
-    blurb: ""   # TODO: program/institution and project focus
+    blurb: "[LinkedIn](https://www.linkedin.com/in/emily-shen-b072852a4/)"
 
   - name: "Sijia Zhu"
     role: "Student"
