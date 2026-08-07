@@ -24,10 +24,10 @@
 # Order within each group is the order shown on the page.
 
 pi:
-  - name: "Kenneth (Kenny) Westerman, PhD"
-    # The section heading already says "Principal Investigator", so this line
-    # carries the appointment instead of repeating it.
-    role: "Assistant Professor, MGH and Harvard Medical School"
+  - name: "Kenny Westerman, PhD"
+    # Left blank on purpose: the section heading already says the role, and an
+    # empty role is skipped rather than rendered as a blank line.
+    role:
     image: "kew_headshot.jpg"
     blurb: ""
     email: "kewesterman@mgb.org"
