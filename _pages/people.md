@@ -8,7 +8,7 @@ author_profile: false
 {% include base_path %}
 
 <style>
-.people-grid { display: flex; flex-wrap: wrap; gap: 1.75em; margin: 1.5em 0 2.5em; }
+.people-grid { display: flex; flex-wrap: wrap; gap: 1.75em; margin: 1.25em 0 2.25em; }
 .person { display: flex; gap: 1em; flex: 1 1 22em; min-width: 20em; align-items: flex-start; }
 .person-photo { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
 .person-initials { width: 96px; height: 96px; border-radius: 50%; flex-shrink: 0;
@@ -33,32 +33,19 @@ author_profile: false
 @media (max-width: 600px) { .alum { flex: 1 1 100%; min-width: 0; } }
 </style>
 
+## Principal Investigator
+
 <div class="people-grid">
-{% for p in site.data.people.current %}
-  <div class="person">
-    {% if p.image %}
-      <img class="person-photo" src="{{ p.image | prepend: '/images/' | prepend: base_path }}" alt="{{ p.name }}">
-    {% else %}
-      {% comment %} Drop any credential suffix ("…, PhD") before taking initials. {% endcomment %}
-      {% assign parts = p.name | split: ',' | first | split: ' ' %}
-      <div class="person-initials">{{ parts | first | slice: 0 }}{{ parts | last | slice: 0 }}</div>
-    {% endif %}
-    <div class="person-body">
-      <div class="person-name">{{ p.name }}</div>
-      <div class="person-role">{{ p.role }}</div>
-      {% comment %} markdownify so blurbs can use links and emphasis; it wraps
-         output in <p>, which we strip to keep the card spacing. {% endcomment %}
-      {% if p.blurb and p.blurb != "" %}<div class="person-blurb">{{ p.blurb | markdownify | remove: '<p>' | remove: '</p>' }}</div>{% endif %}
-      <div class="person-links">
-        {% if p.website %}<a href="{{ p.website }}">Profile</a>{% endif %}
-        {% if p.email %}<a href="mailto:{{ p.email }}">Email</a>{% endif %}
-        {% if p.scholar %}<a href="{{ p.scholar }}">Scholar</a>{% endif %}
-        {% if p.github %}<a href="{{ p.github }}">GitHub</a>{% endif %}
-        {% if p.orcid %}<a href="{{ p.orcid }}">ORCID</a>{% endif %}
-        {% if p.linkedin %}<a href="{{ p.linkedin }}">LinkedIn</a>{% endif %}
-      </div>
-    </div>
-  </div>
+{% for p in site.data.people.pi %}
+  {% include person-card.html person=p website_label="Bio & CV" %}
+{% endfor %}
+</div>
+
+## Lab members
+
+<div class="people-grid">
+{% for p in site.data.people.members %}
+  {% include person-card.html person=p %}
 {% endfor %}
 </div>
 
