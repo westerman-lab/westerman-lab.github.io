@@ -23,7 +23,7 @@ output in <p>, which is stripped to keep the card spacing tight.
     <div class="person-links">
       {% if p.website %}<a href="{{ p.website }}">{{ include.website_label | default: "Website" }}</a>{% endif %}
       {% if p.email %}<a href="mailto:{{ p.email }}">Email</a>{% endif %}
-      {% if p.scholar %}<a href="{{ p.scholar }}">Scholar</a>{% endif %}
+      {% if p.scholar %}<a href="{{ p.scholar }}">Google Scholar</a>{% endif %}
       {% if p.github %}<a href="{{ p.github }}">GitHub</a>{% endif %}
       {% if p.orcid %}<a href="{{ p.orcid }}">ORCID</a>{% endif %}
       {% if p.linkedin %}<a href="{{ p.linkedin }}">LinkedIn</a>{% endif %}

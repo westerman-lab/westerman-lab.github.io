@@ -29,10 +29,8 @@ pi:
     # empty role is skipped rather than rendered as a blank line.
     role:
     image: "kew_headshot.jpg"
-    blurb: ""
-    email: "kewesterman@mgb.org"
+    blurb: "[kewesterman@mgb.org](mailto:kewesterman@mgb.org)"
     website: "/pi/"
-    github: "https://github.com/kwesterman"
     scholar: "https://scholar.google.com/citations?user=bNSlrr0AAAAJ&hl=en"
     orcid:
 
