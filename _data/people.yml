@@ -16,7 +16,7 @@
 #   github / scholar / orcid / linkedin / website  (optional)  full URLs
 #
 # `website` renders as the first link under a person's name. On the PI entry
-# it points at /pi/ and is labelled "Bio & CV"; elsewhere it reads "Website".
+# it points at /pi/ and is labelled "Profile"; elsewhere it reads "Website".
 #
 # Alumni entries read only name, role, image, and next (where they went after
 # the lab); blurbs and links are ignored there.

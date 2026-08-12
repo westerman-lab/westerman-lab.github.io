@@ -37,7 +37,7 @@ author_profile: false
 
 <div class="people-grid">
 {% for p in site.data.people.pi %}
-  {% include person-card.html person=p website_label="Bio & CV" %}
+  {% include person-card.html person=p website_label="Profile" %}
 {% endfor %}
 </div>
 
