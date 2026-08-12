@@ -1,10 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" role="img"
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 330" role="img"
      aria-labelledby="pipelineTitle pipelineDesc">
   <title id="pipelineTitle">How the Westerman Lab works</title>
   <desc id="pipelineDesc">Genetic variation and a modifiable exposure feed into
-    genome-wide interaction testing in biobank-scale data. Results branch into
-    molecular mechanism and response prediction, which together support
-    precision prevention: identifying who benefits most from which change.</desc>
+    interaction testing at scale. Results branch into mechanism and prediction,
+    which together support precision prevention.</desc>
 
   <style>
     .box   { fill: #f6f7f8; stroke: #dde0e4; stroke-width: 1.5; }
@@ -26,48 +25,43 @@
   </defs>
 
   <!-- ── inputs ─────────────────────────────────────────────────────── -->
-  <rect class="gene" x="16"  y="70"  width="176" height="86" rx="10"/>
-  <text class="t" x="104" y="104">Genetic variation</text>
-  <text class="s" x="104" y="126">variants and</text>
-  <text class="s" x="104" y="142">polygenic scores</text>
+  <rect class="gene" x="16"  y="57"  width="176" height="86" rx="10"/>
+  <text class="t" x="104" y="91">Genetic variation</text>
+  <text class="s" x="104" y="113">variants and</text>
+  <text class="s" x="104" y="129">polygenic scores</text>
 
-  <rect class="expo" x="16"  y="204" width="176" height="86" rx="10"/>
-  <text class="t" x="104" y="238">Exposure</text>
-  <text class="s" x="104" y="260">diet, activity,</text>
-  <text class="s" x="104" y="276">adiposity</text>
+  <rect class="expo" x="16"  y="197" width="176" height="86" rx="10"/>
+  <text class="t" x="104" y="231">Exposure</text>
+  <text class="s" x="104" y="253">diet, activity,</text>
+  <text class="s" x="104" y="269">adiposity</text>
 
   <!-- ── interaction testing ────────────────────────────────────────── -->
-  <rect class="box" x="262" y="115" width="216" height="130" rx="10"/>
-  <text class="t" x="370" y="152">Interaction</text>
-  <text class="t" x="370" y="174">testing at scale</text>
-  <text class="s" x="370" y="200">UK Biobank · All of Us · TOPMed</text>
-  <text class="s" x="370" y="220">GEM · METAGEM · REGEM</text>
+  <rect class="box" x="262" y="125" width="216" height="90" rx="10"/>
+  <text class="t" x="370" y="163">Interaction</text>
+  <text class="t" x="370" y="185">testing at scale</text>
 
   <!-- ── two branches ───────────────────────────────────────────────── -->
-  <rect class="box" x="548" y="48"  width="204" height="110" rx="10"/>
-  <text class="t" x="650" y="88">Mechanism</text>
-  <text class="s" x="650" y="112">molecular mediators,</text>
-  <text class="s" x="650" y="130">decomposed interaction</text>
+  <rect class="box" x="548" y="45"  width="204" height="100" rx="10"/>
+  <text class="t" x="650" y="80">Mechanism</text>
+  <text class="s" x="650" y="104">molecular mediators,</text>
+  <text class="s" x="650" y="122">pathway-specific PGS</text>
 
-  <rect class="box" x="548" y="202" width="204" height="110" rx="10"/>
-  <text class="t" x="650" y="242">Prediction</text>
-  <text class="s" x="650" y="266">interaction and</text>
-  <text class="s" x="650" y="284">pathway-specific PGS</text>
+  <rect class="box" x="548" y="195" width="204" height="100" rx="10"/>
+  <text class="t" x="650" y="238">Prediction</text>
+  <text class="s" x="650" y="262">interaction-focused PGS</text>
 
   <!-- ── outcome ────────────────────────────────────────────────────── -->
-  <rect class="out" x="822" y="110" width="162" height="140" rx="10"/>
-  <text class="t" x="903" y="152">Precision</text>
-  <text class="t" x="903" y="174">prevention</text>
-  <text class="s" x="903" y="200">who benefits from</text>
-  <text class="s" x="903" y="218">which change</text>
+  <rect class="out" x="822" y="125" width="162" height="90" rx="10"/>
+  <text class="t" x="903" y="163">Precision</text>
+  <text class="t" x="903" y="185">prevention</text>
 
   <!-- ── flow ───────────────────────────────────────────────────────── -->
-  <path class="flow" d="M 200 113 C 232 113, 230 155, 254 158"/>
-  <path class="flow" d="M 200 247 C 232 247, 230 205, 254 202"/>
+  <path class="flow" d="M 200 100 C 232 100, 230 148, 254 150"/>
+  <path class="flow" d="M 200 240 C 232 240, 230 192, 254 190"/>
 
-  <path class="flow" d="M 486 152 C 516 152, 512 105, 540 103"/>
-  <path class="flow" d="M 486 208 C 516 208, 512 255, 540 257"/>
+  <path class="flow" d="M 486 150 C 516 150, 512  97, 540  95"/>
+  <path class="flow" d="M 486 190 C 516 190, 512 243, 540 245"/>
 
-  <path class="flow" d="M 760 103 C 790 103, 786 150, 814 152"/>
-  <path class="flow" d="M 760 257 C 790 257, 786 210, 814 208"/>
+  <path class="flow" d="M 760  95 C 790  95, 786 148, 814 150"/>
+  <path class="flow" d="M 760 245 C 790 245, 786 192, 814 190"/>
 </svg>
