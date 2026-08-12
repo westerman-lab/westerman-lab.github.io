@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 884 330" role="img"
+     aria-labelledby="pipelineTitle pipelineDesc">
+  <title id="pipelineTitle">How the Westerman Lab works</title>
+  <desc id="pipelineDesc">Genetic variation and a modifiable exposure feed into
+    interaction testing at scale. Results branch into mechanism and prediction,
+    which together support precision prevention.</desc>
+
+  <style>
+    .box   { fill: #f6f7f8; stroke: #dde0e4; stroke-width: 1.5; }
+    .gene  { fill: #f1faf6; stroke: #1c9e77; stroke-width: 1.5; }
+    .expo  { fill: #fdf5ef; stroke: #d95f02; stroke-width: 1.5; }
+    .out   { fill: #ffffff; stroke: #9aa1a9; stroke-width: 2; }
+    .t     { font: 600 17px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+             fill: #33373d; text-anchor: middle; }
+    .s     { font: 400 13.5px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+             fill: #6b7480; text-anchor: middle; }
+    .flow  { fill: none; stroke: #b3b9c0; stroke-width: 2; marker-end: url(#tip); }
+  </style>
+
+  <defs>
+    <marker id="tip" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#b3b9c0"/>
+    </marker>
+  </defs>
+
+  <!-- ── inputs ─────────────────────────────────────────────────────── -->
+  <rect class="gene" x="12" y="57" width="168" height="86" rx="10"/>
+  <text class="t" x="96" y="91">Genetic variation</text>
+  <text class="s" x="96" y="113">variants and</text>
+  <text class="s" x="96" y="129">polygenic scores</text>
+
+  <rect class="expo" x="12" y="197" width="168" height="86" rx="10"/>
+  <text class="t" x="96" y="231">Exposure</text>
+  <text class="s" x="96" y="253">diet, activity,</text>
+  <text class="s" x="96" y="269">adiposity</text>
+
+  <!-- ── interaction testing ────────────────────────────────────────── -->
+  <rect class="box" x="232" y="125" width="192" height="90" rx="10"/>
+  <text class="t" x="328" y="163">Interaction</text>
+  <text class="t" x="328" y="185">testing at scale</text>
+
+  <!-- ── two branches ───────────────────────────────────────────────── -->
+  <rect class="box" x="476" y="45" width="192" height="100" rx="10"/>
+  <text class="t" x="572" y="80">Mechanism</text>
+  <text class="s" x="572" y="104">molecular mediators,</text>
+  <text class="s" x="572" y="122">pathway-specific PGS</text>
+
+  <rect class="box" x="476" y="195" width="192" height="100" rx="10"/>
+  <text class="t" x="572" y="238">Prediction</text>
+  <text class="s" x="572" y="262">interaction-focused PGS</text>
+
+  <!-- ── outcome ────────────────────────────────────────────────────── -->
+  <rect class="out" x="720" y="125" width="152" height="90" rx="10"/>
+  <text class="t" x="796" y="163">Precision</text>
+  <text class="t" x="796" y="185">prevention</text>
+
+  <!-- ── flow ───────────────────────────────────────────────────────── -->
+  <path class="flow" d="M 188 100 C 210 100, 206 148, 224 150"/>
+  <path class="flow" d="M 188 240 C 210 240, 206 192, 224 190"/>
+
+  <path class="flow" d="M 432 150 C 454 150, 450  97, 468  95"/>
+  <path class="flow" d="M 432 190 C 454 190, 450 243, 468 245"/>
+
+  <path class="flow" d="M 676  95 C 698  95, 694 148, 712 150"/>
+  <path class="flow" d="M 676 245 C 698 245, 694 192, 712 190"/>
+</svg>

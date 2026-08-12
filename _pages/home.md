@@ -12,9 +12,13 @@ redirect_from:
 
 The Westerman Lab sits at the intersection of genetic epidemiology and precision cardiometabolic disease prevention. We develop and apply methods for gene-environment interaction (GxE) analysis in large-scale population datasets, and use them to understand how individuals respond differently to lifestyle factors and other modifiable exposures. Current projects have a particular focus on both omega-3 fatty acids and adiposity as exposures.
 
-<p align="center">
-<img src='/images/GxE_diagram.png' width='450'>
+<!-- A wide left-to-right figure cannot reflow, so on narrow screens it scrolls
+     inside this wrapper rather than shrinking its labels into illegibility. -->
+<div style="overflow-x:auto; -webkit-overflow-scrolling:touch; margin:1.5em 0;">
+<p align="center" style="margin:0;">
+<img src='/images/lab_pipeline.svg' alt='Genetic variation and a modifiable exposure feed into interaction testing at scale; results branch into mechanism and prediction, which together support precision prevention.' style='width:100%; min-width:560px; max-width:720px;'>
 </p>
+</div>
 
 Our group is based in the [Clinical and Translational Epidemiology Unit](https://www.massgeneral.org/medicine/cteu) at Massachusetts General Hospital, with an additional presence at the [Broad Institute](https://www.broadinstitute.org/) (Broad Diabetes Initiative and Diabetes Genetics Research Group).
 
